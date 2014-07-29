@@ -1,6 +1,6 @@
 {
   "name": "bunyan-raven",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A bunyan-compatible stream interface that sends error logs to raven-node.",
   "main": "index.js",
   "dependencies": {},
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/chakrit/bunyan-raven.git"
+    "url": "git://github.com/dominiek/bunyan-raven.git"
   },
   "keywords": [
     "bunyan",
@@ -23,8 +23,11 @@
     "getsentry"
   ],
   "author": "Chakrit Wichian <service@chakrit.net> (http://chakrit.net)",
+  "contributors": [
+    "Dominiek ter Heide <info@dominiek.com> (http://dominiek.com)"
+  ],
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/chakrit/bunyan-raven/issues"
+    "url": "https://github.com/dominiek/bunyan-raven/issues"
   }
 }

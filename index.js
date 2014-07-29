@@ -54,6 +54,13 @@ module.exports = (function(undefined) {
     var tags = ['name', 'hostname', 'pid', 'level'];
     tags.forEach(function(tag) { options.tags[tag] = record[tag]; });
 
+    // Attach any fields from record.tags as tags as well
+    if (record.tags && typeof record.tags == 'object') {
+      for (var key in record.tags) {
+        options.tags[key] = record.tags[key];
+      }
+    }
+
     // Add 'extra' meta-data from record
     var skip = ['msg', 'time', 'v', 'err'];
     for (var key in record) {

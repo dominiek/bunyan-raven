@@ -44,6 +44,9 @@ module.exports = (function() {
   log.error({myCustomField: 'I like dolphins', err: err()});
   log.error({myCustomField: 'I like dolphins'}, 'error message');
 
+  // Custom tags possible too
+  log.error({tags: {urlPath: '/bla'}}, 'error message');
+
   // Circular objects are safely catched
   function Foo() {
     this.abc = "Hello";
